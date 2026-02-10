@@ -1,15 +1,43 @@
-<html lang="PL">
-	<head>
-		<title> Teksty i takie tam </title>
-		<meta charset="UTF-8">
-  </head>
-  <body>
-    <p> To jest zwyky tekst </p>
-    <p><b> To jest pogrubiony tekst </b></p>
-    <p><strong> To jest pogrubiony tekst za pomocą "strong" </strong></p>
-    <p><i> To jest pokrzywiony tekst </i></p>
-    <p><em> To jest pokrzywiony tekst za pomocą "ew" </em></p>
-    11<sup>2</sup>
-    12<sub>40</sub>
-  </body>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id/Class/Nic</title>
+    <style>
+        /* Stylowanie elementów */
+        h3 {
+            color: red;
+        }
+        p {
+            color: green;
+        }
+        /* Kontener dla divów ustawiający je obok siebie */
+        .container {
+            display: flex;
+            gap: 10px;
+        }
+        /* Styl dla divów */
+        .orange {
+            background-color: orange;
+            width: 100px;
+            height: 100px;
+        }
+        #blueDiv {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Mój tytuł</h3>
+    <p>To jest pierwszy paragraf.</p>
+    <p>To jest drugi paragraf.</p>
+    <div class="container">
+        <div class="orange"></div>
+        <div class="orange"></div>
+        <div id="blueDiv"></div>
+    </div>
+</body>
 </html>
